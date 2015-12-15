@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery.iframe</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+	<style>
+	iframe {
+		width: 100%;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+		  <h1>Let's iframify! <small>$('.panel').iframify()</small></h1>
+		</div>
+
+		<div class="panel panel-default">
+		  <div class="panel-heading">Panel heading without title</div>
+		  <div class="panel-body">
+		    Panel content
+		  </div>
+		</div>
+
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Panel title</h3>
+		  </div>
+		  <div class="panel-body">
+		    Panel content
+		  </div>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="../dist/jquery.iframe.js"></script>
+	<script>
+		var iframe = $.iframe('.container', { css: ['https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css'] });
+		$('<h1>Hey</h1>').appendTo(iframe.contents().find('body'));
+		$('<h1>Hey</h1>').appendTo(iframe.contents().find('body'));
+		$('<h1>Hey</h1>').appendTo(iframe.contents().find('body'));
+		$('<h1>Hey</h1>').appendTo(iframe.contents().find('body'));
+
+		$('.panel').iframify({ css: ['https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css'] });
+	</script>
+</body>
+</html>
