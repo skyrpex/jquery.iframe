@@ -32,10 +32,18 @@ $.iframe = function(el, options = {}) {
 };
 
 $.fn.iframify = function(options) {
-  options = $.extend({}, options, { insertMethod: 'insertBefore' });
+  options = $.extend(true, {
+    wrapChildren: false,
+  }, options);
+
+  if (options.wrapChildren) {
+    options.insertMethod = options.wrapChildren ? 'appendTo' : 'insertBefore';
+  }
+
   return this.map(function() {
+    let contents = options.wrapChildren ? $(this).children().detach() : $(this).detach();
     let iframe = $.iframe(this, options);
-    iframe.contents().find('body').append(this);
+    iframe.contents().find('body').append(contents);
     return iframe;
   });
 };
