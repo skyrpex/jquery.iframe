@@ -36,12 +36,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="../dist/jquery.iframe.js"></script>
 	<script>
+		// Dynamic iframe
 		var iframe = $.iframe('.container', { css: ['https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css'] });
-		$('<h1>Hey</h1>').appendTo(iframe.contents().find('body'));
-		$('<h1>Hey</h1>').appendTo(iframe.contents().find('body'));
-		$('<h1>Hey</h1>').appendTo(iframe.contents().find('body'));
-		$('<h1>Hey</h1>').appendTo(iframe.contents().find('body'));
+		$('<p>Dynamic iframe</p>').appendTo(iframe.contents().find('body'));
 
+		// Iframify existing contents
 		$('.panel').iframify({ css: ['https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css'] });
 	</script>
 </body>
