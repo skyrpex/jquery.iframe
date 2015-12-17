@@ -1,2 +1,9 @@
 /src/
 /test/
+.babelrc
+.editorconfig
+.gitattributes
+.gitignore
+.jscsrc
+README.md
+webpack.config.babel.js
