@@ -1,7 +1,7 @@
 {
   "name": "jquery.iframe",
   "description": "jQuery plugin that creates inline iframes to isolate certain blocks of HTML.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "scripts": {
     "clean-dist": "rimraf lib/ && mkdirp lib/",
