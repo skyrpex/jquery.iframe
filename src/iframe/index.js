@@ -13,9 +13,10 @@ export default (el, options = {}) => {
   $iframe[options.insertMethod](el);
 
   // Initialize document
-  iframe.contentWindow.document.open();
-  iframe.contentWindow.document.write(options.template || template);
-  iframe.contentWindow.document.close();
+  let iframeDocument = iframe.contentWindow.document;
+  iframeDocument.open();
+  iframeDocument.write(options.template || template);
+  iframeDocument.close();
 
   return $(iframe);
 };
