@@ -27,7 +27,7 @@
     "webpack": "^1.12.15"
   },
   "peerDependencies": {
-    "jquery": "^1.4.0"
+    "jquery": "^1.12.4"
   },
   "repository": {
     "type": "git",
