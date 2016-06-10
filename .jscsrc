@@ -1,6 +1,0 @@
-{
-  "preset": "airbnb",
-  "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
-  "requirePaddingNewLinesBeforeLineComments": false,
-  "requirePaddingNewLinesAfterBlocks": false
-}

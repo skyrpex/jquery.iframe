@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.babel.js"
+      }
+    }
+  },
+  "rules": {
+    "no-extra-semi": 2,
+    "semi": [2, "never"],
+    "indent": ["error", 4],
+    "func-names": 0,
+    "global-require": 1,
+    "no-shadow": 0,
+    "no-param-reassign": 0,
+    "no-return-assign": 0,
+    "no-underscore-dangle": ["error", { "allowAfterThis": true }],
+    "arrow-body-style": 0,
+    "import/no-unresolved": 1
+  }
+}
