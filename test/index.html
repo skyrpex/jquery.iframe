@@ -36,18 +36,18 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 	<script src="../dist/jquery.iframe.js"></script>
 	<script>
-		// // Dynamic iframe
-		// var iframe = $.iframe('.container', { css: ['https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css'] });
-		// $('<p>Dynamic iframe</p>').appendTo(iframe.contents().find('body'));
+		// Dynamic iframe
+		var iframe = $.iframe('.container', { css: ['https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css'] });
+		$('<p>Dynamic iframe</p>').appendTo(iframe.contents().find('body'));
 
 		// // Iframify existing contents
 		// $('.panel').iframify({ css: ['https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css'] });
 
-		// Iframify whole container
-		$('.container').iframify({
-			wrapChildren: true,
-			css: ['https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css'],
-		});
+		// // Iframify whole container
+		// $('.container').iframify({
+		// 	wrapChildren: true,
+		// 	css: ['https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css'],
+		// });
 	</script>
 </body>
 </html>

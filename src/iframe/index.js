@@ -18,5 +18,5 @@ export default (el, options = {}) => {
     iframeDocument.write(options.template || template)
     iframeDocument.close()
 
-    return $(iframe)
+    return $iframe
 }
