@@ -2,7 +2,7 @@ import $ from 'jquery'
 import template from './template.html'
 
 export default (el, options = {}) => {
-    // Create iframe
+  // Create iframe
   const iframe = document.createElement('iframe')
   const $iframe = $(iframe).attr({
     src: 'about:blank',
@@ -12,7 +12,7 @@ export default (el, options = {}) => {
   })
   $iframe[options.insertMethod](el)
 
-    // Initialize document
+  // Initialize document
   const iframeDocument = iframe.contentWindow.document
   iframeDocument.open()
   iframeDocument.write(options.template || template)

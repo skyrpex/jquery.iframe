@@ -4,7 +4,7 @@ import sync from './iframe/sync'
 import css from './iframe/css'
 
 $.iframe = function (el, options = {}) {
-    // Default options
+  // Default options
   options = $.extend(true, {
     insertMethod: 'appendTo',
     css: [],
@@ -14,13 +14,13 @@ $.iframe = function (el, options = {}) {
     }
   }, options)
 
-    // Create iframe
+  // Create iframe
   const iframe = createIframe(el, options)
 
-    // Add CSS links
+  // Add CSS links
   css(iframe, options.css)
 
-    // Sync height
+  // Sync height
   sync({
     iframe,
     el: iframe.contents().find('html'),

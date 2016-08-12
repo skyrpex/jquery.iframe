@@ -1,4 +1,4 @@
-import webpack from 'webpack'
+import { optimize } from 'webpack'
 
 module.exports = {
   devtool: '#source-map',
@@ -11,8 +11,15 @@ module.exports = {
   },
   module: {
     loaders: [
-            { test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
-            { test: /\.html$/, loader: 'html' }
+      {
+        test: /\.js$/,
+        loader: 'babel',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.html$/,
+        loader: 'html'
+      }
     ]
   },
   externals: {
@@ -24,8 +31,8 @@ module.exports = {
     }
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.AggressiveMergingPlugin()
+    new optimize.UglifyJsPlugin(),
+    new optimize.OccurenceOrderPlugin(),
+    new optimize.AggressiveMergingPlugin()
   ]
 }
