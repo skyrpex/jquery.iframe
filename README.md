@@ -2,6 +2,8 @@
 
 jQuery plugin that creates inline iframes to isolate certain blocks of HTML.
 
+[![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/rqfva21h5sxon85n?svg=true)](https://ci.appveyor.com/project/skyrpex/jquery-iframe) [![TravisCI Build status](https://travis-ci.org/skyrpex/jquery.iframe.svg?branch=master)](https://travis-ci.org/skyrpex/jquery.iframe)
+
 ## Usage
 
 ```bash
