@@ -1,9 +1,10 @@
-/src/
-/test/
+src
+test
 .babelrc
 .editorconfig
 .gitattributes
 .gitignore
-.jscsrc
+.eslintrc
+.eslintignore
 README.md
 webpack.config.babel.js
