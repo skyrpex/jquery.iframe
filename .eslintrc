@@ -5,6 +5,10 @@
     "plugin:import/warnings"
   ],
   "settings": {
+    "import/ignore": [
+      "node_modules",
+      "\\.html$"
+    ],
     "import/resolver": {
       "webpack": {
         "config": "webpack.config.babel.js"
