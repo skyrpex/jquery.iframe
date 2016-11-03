@@ -31,7 +31,7 @@
     "eslint": "^3.2.2",
     "eslint-config-standard": "^5.3.1",
     "eslint-import-resolver-webpack": "^0.5.1",
-    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-import": "^2.1.0",
     "eslint-plugin-promise": "^2.0.1",
     "eslint-plugin-standard": "^2.0.0",
     "html-loader": "^0.4.3",
