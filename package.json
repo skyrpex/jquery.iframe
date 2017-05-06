@@ -38,7 +38,7 @@
     "html-loader": "^0.4.3",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.5.2",
-    "webpack": "^1.12.15"
+    "webpack": "^2.5.1"
   },
   "repository": {
     "type": "git",
